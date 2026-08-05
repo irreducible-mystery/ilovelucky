@@ -172,6 +172,25 @@ def order_audit(ts: list, combine: str = "max", trials: int = 6,
               "order sensitivity PROVEN: the combiner consults arrival "
               "order and must cite it or be retired"))
 
+# ================================================== working rules (design/08)
+choose("reader discipline",
+       "no new receipt ships without at least one kernel path that reads "
+       "it and behaves differently because of it; existing write-only "
+       "marks are reader debt, paid before new corridors open; every "
+       "instrument's claim is stated in adversarial terms (what does the "
+       "cheapest adversary pay?); the rot test (probes/rot_test.py) runs "
+       "against every new discipline before it is trusted",
+       "unbounded confession (receipts outnumbering readers is the "
+       "measured failure shape of this whole design: perfectly honest, "
+       "perfectly weightless); trap architecture for inherent errors "
+       "(an incapacity gets ONE stable name and cheap recognition, never "
+       "a second register -- escapes are instances, not architecture)",
+       "adopted after the rot test showed HONEST and ROTTEN sessions "
+       "indistinguishable by every instrument: the register detects "
+       "effort, not truth, and penalizes honest laziness while rewarding "
+       "articulate fabrication; receipts make lying COMMITTAL, not "
+       "impossible, and that narrower claim is the real one")
+
 # ================================================== horizon
 cannot("register its own reading order",
        "the register sequences what enters a SESSION; the acts that built "
